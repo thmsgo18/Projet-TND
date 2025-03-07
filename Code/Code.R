@@ -1,3 +1,10 @@
+# Charger les bibliothèques nécessaires
+library(ggplot2)
+library(FactoMineR)
+library(cluster)
+library(MASS)
+
+
 # Extarction des datas
 data <- read.csv("Data/Binome3/haberman.data", header = FALSE, sep = ",")
 # Nommage des différentes colonnes
@@ -7,6 +14,7 @@ colnames(data) <- c("Age du patient", "Annee de l'operation -1900",
 
 head(data)
 # Vérification du manque de donnée
+
 colSums(is.na(data))
 # Vérification du typage des variables
 str(data)
@@ -28,9 +36,8 @@ barplot(table(data$`Statut de survie`),
 
 
 # Analyse bivariée
-install.packages("ggplot2", repos = "https://cloud.r-project.org/")
+#install.packages("ggplot2", repos = "https://cloud.r-project.org/")
 
-library(ggplot2)
 
 ggplot(data, aes(x = `Age du patient`, fill = as.factor(`Statut de survie`))) +
   geom_histogram(binwidth = 5, position = "stack", alpha = 0.7) +
@@ -54,3 +61,7 @@ ggplot(data, aes(x = Ganglions_group, fill = as.factor(`Statut de survie`))) +
   scale_fill_manual(values = c("green", "red"),
                     labels = c("Survie > 5 ans", "Deces < 5 ans")) +
   theme_minimal()
+
+
+data$Survival <- as.factor(data$`Statut de survie`)
+# Transformer la variable en facteur
