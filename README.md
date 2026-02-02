@@ -87,8 +87,7 @@ L'analyse permet de :
 
 ## Auteurs
 
-Binôme 3 - Projet TND (Traitement Numérique des Données)  
-Licence 3 - Semestre 2
+[@thmsgo18](https://github.com/thmsgo18)
 
 ## Source des données
 
