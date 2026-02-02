@@ -1,95 +1,99 @@
-# Analyse de données de survie - Haberman's Survival Dataset
+[English](README.md) | [Français](README.fr.md)
 
-## Description du projet
+---
 
-Ce projet réalise une analyse statistique approfondie du jeu de données Haberman's Survival, qui contient des informations sur la survie de patients ayant subi une chirurgie pour un cancer du sein entre 1958 et 1970 à l'hôpital Billings de l'Université de Chicago.
+# Survival Data Analysis - Haberman's Survival Dataset
 
-## Objectifs
+## Project Description
 
-L'objectif principal est d'analyser les facteurs influençant la survie des patients à 5 ans après l'opération, en utilisant des techniques d'analyse de données et de classification.
+This project performs a comprehensive statistical analysis of Haberman's Survival dataset, which contains information about the survival of patients who underwent surgery for breast cancer between 1958 and 1970 at the University of Chicago's Billings Hospital.
 
-## Contenu du dataset
+## Objectives
 
-Le jeu de données comprend **306 observations** avec les variables suivantes :
+The main objective is to analyze the factors influencing patient survival at 5 years post-operation, using data analysis and classification techniques.
 
-- **Age du patient** : Âge au moment de l'opération
-- **Année de l'opération** : Année - 1900
-- **Nombre de ganglions axillaires positifs détectés** : Indicateur de la propagation du cancer
-- **Statut de survie** : 
-  - 1 = survie de 5 ans ou plus
-  - 2 = décès avant 5 ans
+## Dataset Content
 
-## Analyses réalisées
+The dataset includes **306 observations** with the following variables:
 
-### 1. Prétraitement des données
-- Chargement et structuration du dataset
-- Vérification des valeurs manquantes
-- Contrôle du typage des variables
-- Détection des valeurs aberrantes
+- **Patient Age**: Age at the time of operation
+- **Year of Operation**: Year - 1900
+- **Number of Positive Axillary Nodes Detected**: Indicator of cancer spread
+- **Survival Status**: 
+  - 1 = survived 5 years or longer
+  - 2 = died within 5 years
 
-### 2. Analyse univariée
-- Distribution de l'âge des patients
-- Distribution du nombre de ganglions détectés
-- Répartition du statut de survie
+## Analyses Performed
 
-### 3. Analyse bivariée
-- Relation entre l'âge et la survie
-- Impact du nombre de ganglions sur le taux de survie
-- Visualisations avec ggplot2
+### 1. Data Preprocessing
+- Loading and structuring the dataset
+- Checking for missing values
+- Variable type verification
+- Outlier detection
 
-### 4. Classification hiérarchique
-- Standardisation des variables
-- Calcul de la matrice de distances euclidiennes
-- Clustering avec la méthode de Ward
-- Visualisation sous forme de dendrogramme
+### 2. Univariate Analysis
+- Patient age distribution
+- Distribution of detected lymph nodes
+- Survival status distribution
 
-## Technologies utilisées
+### 3. Bivariate Analysis
+- Relationship between age and survival
+- Impact of lymph node count on survival rate
+- Visualizations using ggplot2
 
-- **Langage** : R
-- **Bibliothèques** :
-  - `ggplot2` : Visualisations avancées
-  - `FactoMineR` : Analyse multivariée
-  - `cluster` : Méthodes de clustering
-  - `MASS` : Fonctions statistiques
+### 4. Hierarchical Classification
+- Variable standardization
+- Euclidean distance matrix calculation
+- Clustering with Ward's method
+- Dendrogram visualization
 
-## Structure du projet
+## Technologies Used
+
+- **Language**: R
+- **Libraries**:
+  - `ggplot2`: Advanced visualizations
+  - `FactoMineR`: Multivariate analysis
+  - `cluster`: Clustering methods
+  - `MASS`: Statistical functions
+
+## Project Structure
 
 ```
 Projet-TND/
 ├── Code/
-│   └── Code.R           # Script principal d'analyse
+│   └── Code.R           # Main analysis script
 ├── Data/
 │   └── Binome3/
-│       ├── haberman.data      # Données brutes
-│       └── haberman.names     # Description du dataset
+│       ├── haberman.data      # Raw data
+│       └── haberman.names     # Dataset description
 └── README.md
 ```
 
-## Utilisation
+## Usage
 
-1. S'assurer que R est installé sur votre machine
-2. Installer les packages nécessaires :
+1. Ensure R is installed on your machine
+2. Install required packages:
    ```r
    install.packages(c("ggplot2", "FactoMineR", "cluster", "MASS"))
    ```
-3. Exécuter le script principal :
+3. Run the main script:
    ```r
    source("Code/Code.R")
    ```
 
-## Résultats attendus
+## Expected Results
 
-L'analyse permet de :
-- Identifier les groupes de patients à risque
-- Comprendre l'influence du nombre de ganglions sur la survie
-- Visualiser les patterns dans les données
-- Proposer une classification des patients
+The analysis allows to:
+- Identify at-risk patient groups
+- Understand the influence of lymph node count on survival
+- Visualize patterns in the data
+- Propose a patient classification
 
-## Auteurs
+## Author
 
 [@thmsgo18](https://github.com/thmsgo18)
 
-## Source des données
+## Data Source
 
 Haberman, S. J. (1976). Generalized Residuals for Log-Linear Models.  
-Dataset disponible via l'UCI Machine Learning Repository.
+Dataset available via the UCI Machine Learning Repository.
