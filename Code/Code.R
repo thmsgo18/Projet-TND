@@ -65,3 +65,23 @@ ggplot(data, aes(x = Ganglions_group, fill = as.factor(`Statut de survie`))) +
 
 data$Survival <- as.factor(data$`Statut de survie`)
 # Transformer la variable en facteur
+
+
+# Classification hiérarchique
+
+# Préparation des données (exclure la variable de survie)
+data_clustering <- data[, c("Age du patient", "Annee de l'operation -1900",
+                            "Nombre de ganglions axillaires positifs detectes")]
+
+# Standardisation des données
+data_clustering_scaled <- scale(data_clustering)
+
+# Calcul de la matrice de distances
+distance <- dist(data_clustering_scaled, method = "euclidean")
+
+# Clustering hiérarchique avec la méthode de Ward
+hc <- hclust(distance, method = "ward.D2")
+
+# Affichage du dendrogramme
+plot(hc, labels = FALSE, hang = -1, main = "Dendrogramme - Classification hierarchique")
+rect.hclust(hc, k = 3, border = "red")  # Découper en 3 groupes, ajustable
