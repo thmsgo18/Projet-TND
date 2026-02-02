@@ -89,6 +89,8 @@ The analysis allows to:
 - Visualize patterns in the data
 - Propose a patient classification
 
+**For detailed results and visualizations, please refer to the [full report](Rapport.pdf) (written in French).**
+
 ## Author
 
 [@thmsgo18](https://github.com/thmsgo18)

@@ -89,6 +89,8 @@ L'analyse permet de :
 - Visualiser les patterns dans les données
 - Proposer une classification des patients
 
+**Pour consulter les résultats détaillés et les visualisations, veuillez vous référer au [rapport complet](Rapport.pdf).**
+
 ## Auteurs
 
 [@thmsgo18](https://github.com/thmsgo18)
