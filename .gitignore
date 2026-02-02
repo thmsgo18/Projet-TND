@@ -1,0 +1,10 @@
+# Fichiers macOS
+.DS_Store
+
+# Fichiers de rapport
+*.pages
+
+# Fichiers R
+.Rhistory
+.RData
+.Rproj.user
