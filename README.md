@@ -4,6 +4,8 @@
 
 # Survival Data Analysis - Haberman's Survival Dataset
 
+**Project instructions available in [PROJET_TND_7d393c181caebd340aefb61df17429e8.pdf](PROJET_TND_7d393c181caebd340aefb61df17429e8.pdf) (written in French).**
+
 ## Project Description
 
 This project performs a comprehensive statistical analysis of Haberman's Survival dataset, which contains information about the survival of patients who underwent surgery for breast cancer between 1958 and 1970 at the University of Chicago's Billings Hospital.

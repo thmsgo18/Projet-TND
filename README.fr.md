@@ -4,6 +4,8 @@
 
 # Analyse de données de survie - Haberman's Survival Dataset
 
+**Consignes du projet disponibles dans [PROJET_TND_7d393c181caebd340aefb61df17429e8.pdf](PROJET_TND_7d393c181caebd340aefb61df17429e8.pdf).**
+
 ## Description du projet
 
 Ce projet réalise une analyse statistique approfondie du jeu de données Haberman's Survival, qui contient des informations sur la survie de patients ayant subi une chirurgie pour un cancer du sein entre 1958 et 1970 à l'hôpital Billings de l'Université de Chicago.
